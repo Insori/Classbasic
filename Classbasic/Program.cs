@@ -2,11 +2,18 @@
 
 namespace MyApp // Note: actual namespace depends on the project name.
 {
+    class Math
+    {
+        public static int abs(int i) { return 0; }
+    }
     internal class Program
     {
         static void Main(string[] args)
         {
+            Math.abs(-3);   //가장 가까운 Math 클래스로 인식
+
             OtherClass oc = new OtherClass();
+
             Console.WriteLine("Hello World!");
         }
 
